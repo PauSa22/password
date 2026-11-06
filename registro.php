@@ -14,16 +14,16 @@
 
         <label>Nombre:</label>
         <input type="text" name="nombre">
-
+        <br>
         <label>Nombre de usuario:</label>
         <input type="text" name="user">
-
+        <br>
         <label>Contraseña:</label>
         <input type="pass" name="pass">
-
+        <br>
         <label>Confirmar contraseña:</label>
         <input type="pass" name="confirm">
-
+        <br>
         <button type="submit">Registrarse</button>
 
     </form>
