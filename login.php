@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Inicio de sesión</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="passtyle.css">
 </head>
 
 <body>
@@ -14,16 +14,16 @@
     <form method="POST">
 
         <label>Nombre de usuario:</label>
-        <input type="text" name="usuario">
+        <input type="text" name="user">
 
         <label>Contraseña:</label>
-        <input type="password" name="password">
+        <input type="pass" name="pass">
 
         <button type="submit">Ingresar</button>
 
     </form>
 
-    <p>¿No tienes una cuenta?</p>
+    <p>¿No tienes una cuenta, bro?</p>
 
     <a href="registro.php">Registrarse</a>
 

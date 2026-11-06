@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Registro de usuarios</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Registro de los usuarios</title>
+    <link rel="stylesheet" href="passtyle.css">
 </head>
 
 <body>
@@ -16,13 +16,13 @@
         <input type="text" name="nombre">
 
         <label>Nombre de usuario:</label>
-        <input type="text" name="usuario">
+        <input type="text" name="user">
 
         <label>Contraseña:</label>
-        <input type="password" name="password">
+        <input type="pass" name="pass">
 
         <label>Confirmar contraseña:</label>
-        <input type="password" name="confirmar">
+        <input type="pass" name="confirm">
 
         <button type="submit">Registrarse</button>
 
