@@ -2,8 +2,8 @@
 <?php
 session_start();
 
-$mensaje = "";
-$imagen = "";
+$mnsj = "";
+$img = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -20,25 +20,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Verificar la contraseña
         if (password_verify($pass, $hash)) {
 
-            $nombre = $_SESSION["usuarios"][$user]["nombre"];
-
-            $mensaje = "¡Perfecto! Estás dentro, " . htmlspecialchars($nombre);
-
-            $imagen = "images/si.jpg";
+            $neim = $_SESSION["usuarios"][$user]["nombre"];
+            $mnsj = "¡Perfecto! Estás dentro, " . htmlspecialchars($neim);
+            $img = "images/si.jpg";
 
         } else {
 
-            $mensaje = "Contraseña incorrecta. Inténtalo nuevamente.";
-
-            $imagen = "images/vete.jpg";
+            $mnsj = "Contraseña incorrecta. Inténtalo nuevamente.";
+            $img = "images/vete.jpg";
 
         }
 
     } else {
 
-        $mensaje = "Este usuario no existe.";
-
-        $imagen = "images/vete.jpg";
+        $mnsj = "Este usuario no existe.";
+        $img = "images/vete.jpg";
 
     }
 }
@@ -56,7 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 
     <h1>Inicio de sesión</h1>
-
     <div class="slider-img">
         <img src="images/buscar.jpg" width="120" alt="Buscar usuario">
     </div>
@@ -78,22 +73,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <button type="submit">Ingresar</button>
 
     </form>
-
     <?php
 
     // Mostrar la imagen del resultado
-    if ($imagen != "") {
+    if ($img != "") {
         echo '<div class="slider-img">';
-        echo '<img src="' . $imagen . '" width="150" alt="Resultado">';
+        echo '<img src="' . $img . '" width="150" alt="Resultado">';
         echo '</div>';
     }
-
     ?>
 
-    <p><?php echo $mensaje; ?></p>
-
+    <p><?php echo $mnsj; ?></p>
     <p>¿No tienes una cuenta?</p>
-
     <a href="registro.php">Registrarse</a>
 
 </body>
