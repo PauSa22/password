@@ -1,11 +1,11 @@
 
 body {
     background-color: #dce8f5;
-    font-family:monospace ;
-    text-align: left;
+    font-family: monospace;
+    text-align: center;
     color: #292537;
     margin: 0;
-    padding: 10px;
+    padding: 20px;
 }
 
 h1 {
@@ -16,12 +16,13 @@ h2 {
     color: #30344c;
 }
 
-
 form {
     background-color: #bbd2ea;
-    border: #8094f7 1px solid;
-    margin: 10px;
-    padding: 10px;
+    border: 1px solid #8094f7;
+    width: 400px;
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
     border-radius: 10px;
 }
 
@@ -31,10 +32,12 @@ label {
 
 input {
     padding: 7px;
-    width: 10px;
-    border: #b5cbe8 1px solid;
+    width: 220px;
+    max-width: 85%;
+    border: 1px solid #b5cbe8;
     border-radius: 5px;
     text-align: center;
+    font-family: monospace;
 }
 
 button {
@@ -44,8 +47,39 @@ button {
     padding: 10px 25px;
     border-radius: 7px;
     font-size: 16px;
+    font-family: monospace;
+    cursor: pointer;
 }
 
 button:hover {
     background-color: #505f9a;
+}
+
+.slider-img {
+    margin: 15px auto;
+}
+
+.slider-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+form img {
+    vertical-align: middle;
+}
+
+p {
+    color: #292537;
+}
+
+a {
+    color: #505f9a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #30344c;
+    text-decoration: underline;
 }
